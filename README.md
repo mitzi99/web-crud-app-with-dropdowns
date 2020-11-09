@@ -1,11 +1,11 @@
-#A simple CRUD web application that uses flask web framework,bootstrap, MySQL database, python, HTML+CSS and javascript.
+# A simple CRUD web application that uses flask web framework,bootstrap, MySQL database, python, HTML+CSS and javascript.
 
 ### You need to install the following in order for you to be able to run this set of codes to your computer:
 * Python
 * Flask
 * MySQL 
 
-###This web app features:
+### This web app features:
 
 ![colleges](https://user-images.githubusercontent.com/50761004/98536346-9ee8f880-22c2-11eb-9813-786f732e8df9.png)
 
