@@ -1,0 +1,61 @@
+{% include "header.html" %}
+
+<link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+
+{% block body %}
+
+<div class="container">
+
+ <div class="row"> 
+
+    <h2><a href="/" class="btn btn-info pull-left" role="button">Back to Student Records</a></h2>
+
+    <form class="form-inline pull-right" action="{{url_for('searchlist')}}" method="POST">
+
+      <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search" type="text" name="searchlist">
+
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+<br>
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col md-12">
+
+			<h2>Colleges, Departments, and Courses</h2>
+
+			<table class="table table-striped">
+
+				<tr>
+					<th>College</th>
+					<th>Department</th>
+					<th>Course</th>
+				</tr>
+
+				{% for row in schooldata %}
+				<tr>
+					
+					<td>{{row.1}}</td>
+					<td>{{row.2}}</td>
+					<td>{{row.3}}</td>
+					
+				</tr>
+
+				{% endfor %}
+				
+			</table>
+
+
+
+    
+
+
+{% endblock %}
